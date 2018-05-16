@@ -1,6 +1,6 @@
-#include <iostream>
+#include<iostream>
 #include<string>
-#include <iomanip>
+#include<iomanip>
 using namespace std;
 
 class Set
@@ -21,9 +21,9 @@ class Monday:public Set //single inheritance
 
 public:
 void enter(){
-cout<< "Enter the number of class on Monday: ";
-cin >>class_no;
-
+cout << "Enter the number of class on Monday: ";
+cin >> class_no;
+ 
 for(int m = 0; m < class_no; m++) // Retrieves the names
     {
         cout << "Enter class name: ";
@@ -32,7 +32,7 @@ for(int m = 0; m < class_no; m++) // Retrieves the names
         cin >> start_time[m];
         cout << "Set end time [0000]: ";
         cin >> end_time[m];
-        cout<<endl;
+        cout << endl;
 
 
     }
@@ -76,9 +76,9 @@ void display(){  //display output
         cout <<"Tuesday           \n";
 for(int m = 0; m < class_no; m++){
         cout <<"                    ";
-        cout <<setw(15)<<setfill(' ')<<class_name[m]; //setw and setfill functions usage for uniform spacing
+        cout << setw(15)<<setfill(' ')<<class_name[m]; //setw and setfill functions usage for uniform spacing
         cout << "                 "<< setfill('0') << setw(4)<< start_time[m]<<"-";
-        cout << setfill('0') << setw(4)<< end_time[m]<<endl;
+        cout << setfill('0') << setw(4)<<end_time[m]<<endl;
 
 }
 }
@@ -144,7 +144,7 @@ void display(){  //display output
         cout <<"Thursday          \n";
 for(int m = 0; m < class_no; m++){
         cout <<"                    ";
-        cout <<setw(15)<<setfill(' ')<<class_name[m]; //setw and setfill functions usage for uniform spacing
+        cout << setw(15)<<setfill(' ')<<class_name[m]; //setw and setfill functions usage for uniform spacing
         cout << "                 "<< setfill('0') << setw(4)<< start_time[m]<<"-";
         cout << setfill('0') << setw(4)<< end_time[m]<<endl;
 
@@ -158,8 +158,8 @@ class Friday:public Set //single inheritance
 
 public:
 void enter(){
-cout<< "Enter the number of class on Friday: ";
-cin >>class_no;
+cout << "Enter the number of class on Friday: ";
+cin >> class_no;
 
 for(int m = 0; m < class_no; m++) // Retrieves the names
     {
