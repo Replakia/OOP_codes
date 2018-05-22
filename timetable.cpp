@@ -191,6 +191,12 @@ for(int m = 0; m < class_no; m++){
 
 int main()
 {
+char choice;
+bool run = true;
+while(run)
+{
+
+
 Monday md;
 Tuesday tu;
 Wednesday we;
@@ -219,5 +225,19 @@ th.display();
 cout<<"-----------------------------------------------------------------\n";
 fr.display();
 cout<<"-----------------------------------------------------------------\n";
+
+    do{
+        cout<<"Would you like to generate another table?(Y/N)"<<endl;
+        cin >> choice;
+        cout<<"\n\n";
+        choice = tolower(choice);//Put your letter to its lower case
+      }while (choice != 'n' && choice != 'y');
+        if(choice =='n')
+        {
+            run = false;
+        }
+}
 return 0;
+
+
 }
